@@ -1,0 +1,77 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+}
+
+
+body {
+    background-image:url(night\ sky\ background\ thing.jpeg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family:monospace;
+
+}
+
+.menu{
+    background-color: whitesmoke;
+    text-align:center;
+    box-shadow: 10 px 4 px 14 px 200 px navy;
+    padding: 40px;
+}
+
+.menu ul{
+    display:inline-flex;
+    list-style:none;
+    color:gray;
+    font-size: 32px;
+}
+
+.menu ul li{
+    width: 100px;
+}
+
+.menu ul li a{
+    text-decoration:none;
+    color:darkslateblue;
+}
+
+.menu .fa{
+    margin:5px;
+}
+
+.menu-extension{
+    display:none;
+    font-family:monospace;
+}
+
+.menu ul li:hover .menu-extension{
+    display:block;
+    position: absolute;
+    background-color:rgba(245, 245, 245,0.9);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom:8px;
+    border-radius: 4px;
+}
+
+.menu ul li:hover .menu-extension ul{
+    display:block;
+    margin: 8px;
+}
+
+.menu ul li:hover .menu-extension ul li{
+    width: 120px;
+    padding: 8px;
+    background:transparent;
+    font-size: 12px;
+}
+
+.menu ul li:hover .menu-extension ul li:last-child{
+    border:none;
+}
+
+.menu ul li:hover .menu-extension ul li:first-child{
+    text-decoration:underline;
+}
